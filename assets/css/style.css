@@ -87,6 +87,7 @@ main {
 .threats-types__card .btn {
     background-color: #e4e4e4;
 }
+
 .threats-types__card .btn:hover {
     background-color: var(--text-color-main-hover);
     border-color: var(--text-color-main-hover);
@@ -102,6 +103,39 @@ main {
 .security-video {
     padding-bottom: 40px;
 }
+
+
+
+
+/* ARTICLES PAGE */
+#articles {
+    margin-top: 76px;
+}
+
+.articles__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+#articles [class^='col-'] {
+    margin-bottom: 20px;
+}
+
+.articles__card {
+    color: var(--text-color-main);
+}
+
+.articles-item:hover {
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.articles__title {
+    color: var(--text-color-main-hover);
+}
+/* ARTICLES PAGE END */
 
 
 
@@ -196,6 +230,10 @@ footer {
         margin: 0 0 0 20px;
     }
 
+    .articles-item:hover {
+        transform: scale(1.07);
+    }
+
     footer {
         height: 80px;
     } 
@@ -210,7 +248,7 @@ footer {
         margin-right: 0;
     }
     #footer-container {
-        flex-basis: calc(50% + 64px);
+        flex-basis: calc(50% + 80px);
         justify-content: space-between;
     }
 }
