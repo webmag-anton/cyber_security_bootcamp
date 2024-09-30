@@ -26,7 +26,7 @@
                 <a class="nav-link" href="security_tools.html">Security Tools</a>
                 <a class="nav-link" href="articles.html">Articles</a>
               </div>
-              <button id="get-consultation-btn" type="button" class="btn btn-success">Get consultation</button>
+              <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
             </div>
           </nav>
     </header> 
@@ -80,6 +80,39 @@
           <div class="footer-copyright">© 2024 «Cyber Security»</div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+              <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+
+              <div class="form-group">
+                <label for="consultation_name">Full name</label>
+                <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+              </div>
+              <div class="form-group">
+                <label for="consultation_email">Email address</label>
+                <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="consultation_question">Your question</label>
+                <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
