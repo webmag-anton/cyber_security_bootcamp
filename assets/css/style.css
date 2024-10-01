@@ -1,12 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --text-color-main: #000;
+    /* --text-color-main: #000;
     --text-color-main-hover: #4a21a7;
-    --bg-color-accent: #cfc7b0;
+    --bg-color-accent: #cfc7b0; */
+
+
+
+    /* Light mode */
+  --light-text: #000;
+  --light-text-hover: #4a21a7;
+  --light-text-reverse: #fff;
+  --light-bg-color-accent: #cfc7b0;
+  --light-bg-color: #fff;
+
+  /* Dark mode */
+  --dark-text: #fff;
+  --dark-text-hover: #4a21a7;
+  --light-text-reverse: #000;
+  --dark-bg-color-accent: #cfc7b0;
+  --dark-bg-color: #272727;
+
+  /* Default mode */
+  --text-color-main: var(--light-text);
+  --text-color-main-hover: var(--light-text-hover);
+  --text-color-reverse: var(--light-text-reverse);
+  --bg-color-accent: var(--light-bg-color-accent);
+  --bg-color: var(--light-bg-color);
+
+
+  /* Light mode */
+  --light-switch-shadow: #373d4e;
+  --light-switch-icon: "🌚";
+
+  /* Dark mode */
+  --dark-switch-shadow: #fce477;
+  --dark-switch-icon: "🌝";
+
+  /* Default mode */
+  --switch-shadow-color: var(--light-switch-shadow);
+  --switch-icon: var(--light-switch-icon);
 }
 
-body {
+/* Switched mode */
+#theme-switch {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+ }
+#theme-switch:checked ~ .page {
+    --text-color-main: var(--dark-text);
+    --text-color-main-hover: var(--dark-text-hover);
+    --bg-color-accent: var(--dark-bg-color-accent);
+    --bg-color: var(--dark-bg-color);
+    
+    --switch-shadow-color: var(--dark-switch-shadow);
+    --switch-icon: var(--dark-switch-icon);
+}
+#switch-label::before {
+  content: var(--switch-icon);
+  font-size: 40px;
+  transition: text-shadow .2s;
+  cursor: pointer;
+}
+#theme-switch:focus ~ .page #switch-label::before,
+#switch-label:hover::before {
+  text-shadow: 0 0 15px var(--switch-shadow-color);
+}
+#switch-label {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+
+/* body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,6 +90,18 @@ body {
     font-weight: 400;
     font-style: normal;
     color: var(--text-color-main);
+} */
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color-main);
+    background-color: var(--bg-color);
 }
 
 ul {
@@ -52,6 +139,19 @@ section h3 {
     background-color: #561cdd;
     border-color: #561cdd;
 }
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #e4cfff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.9);
+}
+.btn-success {
+    background-color: #276335;
+    border-color: #276335;
+}
+.modal-content {
+    color: #000;
+}
 
 
 
@@ -63,17 +163,43 @@ main {
 #main-section {
     position: relative;
     height: 70vh;
+    min-height: 320px;
     background: url("../images/cyber-security.webp") no-repeat center / cover;
 }  
 
 #cover-text {
     position: absolute;
-    bottom: 100px;
+    bottom: 20px;
     left: 30px;
     width: 80%;
     max-width: 400px;
-    padding: 30px;
-    background-color: rgba(255,255,255,.7);
+    padding: 15px;
+    background-color: rgba(255,255,255,.72);
+    color: #000;
+    animation: appear 1.4s ease;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-70px);
+        opacity: .4;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#cover-text h1 {
+    font-size: 25px;    
+}
+#cover-text h2 {
+    font-size: 20px; 
+    font-style: italic;   
 }
 
 #threats-types {
@@ -82,6 +208,10 @@ main {
 
 #threats-types [class^='col-'] {
     margin-bottom: 15px;
+}
+
+.threats-types__card {
+    color: var(--text-color-reverse);
 }
 
 .threats-types__card .btn {
@@ -140,8 +270,12 @@ main {
     padding-left: 18px;
 }
 .threat_main .accent {
-    color: var(--text-color-main-hover);
+    margin-top: 35px;
+    color: #835be0;
     font-weight: bold;
+}
+.breadcrumb li {
+    margin-bottom: 0;
 }
 /* Threat PAGE END */
 
@@ -158,6 +292,7 @@ main {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+    color: #000;
 }
 
 #articles [class^='col-'] {
@@ -235,7 +370,7 @@ footer {
 }
 
 .footer-navigation a {
-    color: var(--text-color-main);
+    color: #000;
     font-size: 14px;
 }
 
@@ -265,7 +400,7 @@ footer {
 
 #social-networks i {
     font-size: 30px;
-    color: var(--text-color-main);
+    color: #000;
 }
 
 #social-networks i:hover {
@@ -275,6 +410,7 @@ footer {
 
 .footer-copyright {
     white-space: nowrap;
+    color: #000;
 }
 
 
@@ -304,6 +440,11 @@ footer {
 
     .articles-item:hover {
         transform: scale(1.07);
+    }
+
+    #cover-text {
+        bottom: 100px;
+        padding: 30px;
     }
 
     footer {

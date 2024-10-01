@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Persistent Threats</title>
+    <!-- favicons -->
+ 
+    <meta name="description" content="Cyber Security">
+    <meta name="keywords" content="cyber security">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-switch">
+    <div class="page">
+      <header>
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../assets/images/logo_cyber_security.png" alt="cyber security logo">
+              </a>
+              <label for="theme-switch" id="switch-label"></label>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link" href="../index.html">Home</a>
+                  <a class="nav-link" href="../security_tools.html">Security Tools</a>
+                  <a class="nav-link" href="../articles.html">Articles</a>
+                </div>
+                <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
+              </div>
+            </nav>
+      </header> 
+
+      <main class="threat_main">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Advanced Persistent Threats (APTs)</li>
+                          </ol>
+                        </nav>
+                  </div>
+              </div>
+          </div>
+          <article id="threat_ransomware">
+              <div class="container">
+                  <h3 class="text-center">Advanced Persistent Threats (APTs)</h3>
+                  <div class="row">
+                      <div class="col-12">
+                          <p><b>Description:</b> Long-term, highly targeted attacks by skilled threat actors (often state-sponsored) aimed at stealing sensitive data.</p>
+                          <p><b>Impact:</b> Espionage, intellectual property theft, long-term data exfiltration.</p>
+                          <p><b>Examples:</b> Stuxnet, SolarWinds attack.</p>
+                          <p>Advanced Persistent Threats (APTs) are sophisticated, prolonged cyberattacks that target organizations to steal sensitive information, disrupt operations, or gain a foothold for future exploitation. APTs are typically carried out by skilled attackers, often state-sponsored or highly organized cybercriminal groups, and they use a combination of stealthy techniques, social engineering, malware, and exploitation of vulnerabilities to achieve their goals.</p>
+                          <p class="accent">Here’s how you can protect against APTs:</p>
+                          <ol>
+                              <li><h5>Strong Network Segmentation</h5>
+                                  <ul>
+                                      <li>Segment your network to isolate sensitive systems and data from less critical parts of the network. This limits the ability of attackers to move laterally once they have breached the network.</li>
+                                      <li>Use firewalls and virtual local area networks (VLANs) to control and restrict access between different network zones. For example, production environments should be isolated from administrative or business networks.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Continuous Monitoring and Threat Intelligence</h5>
+                                  <ul>
+                                      <li>Implement Security Information and Event Management (SIEM) systems to aggregate and analyze log data from across your environment. SIEM systems can detect anomalous behavior and alert you to potential APT activity.</li>
+                                      <li>Use threat intelligence services to stay updated on emerging APT tactics, techniques, and procedures (TTPs). Threat intelligence can help you recognize early signs of an APT attack and proactively update defenses.</li>
+                                      <li>Deploy endpoint detection and response (EDR) tools to monitor endpoint behavior, detect malicious activity, and respond to incidents in real-time.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Regular Patch Management</h5>
+                                  <ul>
+                                      <li>Patch vulnerabilities regularly across all systems, applications, and devices. APT actors often exploit known vulnerabilities in unpatched systems to gain initial access.</li>
+                                      <li>Enable automatic updates where possible and prioritize patching critical systems that store or process sensitive information.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Multi-Factor Authentication (MFA)</h5>
+                                  <ul>
+                                      <li>Implement multi-factor authentication (MFA) for all users, especially those with privileged access or who manage critical systems. Even if credentials are compromised through phishing or other means, MFA can prevent attackers from gaining full access.</li>
+                                      <li>Ensure that MFA tokens or methods are secure and difficult to bypass, such as using hardware-based tokens (e.g., YubiKey) or time-based one-time passwords (TOTP).</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Strict Access Control Policies</h5>
+                                  <ul>
+                                      <li>Apply the Principle of Least Privilege (PoLP), ensuring that employees only have access to the resources and systems necessary for their role. Limiting access reduces the potential damage if an account is compromised.</li>
+                                      <li>Use Role-Based Access Control (RBAC) to assign permissions based on job functions and regularly review permissions to ensure they align with current roles.</li>
+                                      <li>Implement just-in-time access for privileged users, granting them elevated access only when needed, and revoke those rights when they are no longer necessary.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Network Intrusion Detection and Prevention Systems (IDS/IPS)</h5>
+                                  <ul>
+                                      <li>Deploy Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) to detect and block malicious network traffic. IDS/IPS solutions can recognize patterns of known APT tactics and alert you to unusual traffic or activity.</li>
+                                      <li>Implement deep packet inspection (DPI) to analyze network traffic in detail, which can help detect encrypted malicious communication or attempts to exfiltrate data.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Advanced Endpoint Protection</h5>
+                                  <ul>
+                                      <li>Install next-generation antivirus (NGAV) and endpoint detection and response (EDR) solutions to detect and respond to sophisticated malware or attacker activity at the endpoint level.</li>
+                                      <li>These tools use machine learning and behavioral analysis to detect anomalous activity that might indicate an APT attack, such as unauthorized software execution, lateral movement, or data exfiltration attempts.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Strong Email and Web Security</h5>
+                                  <ul>
+                                      <li>Implement email filtering solutions to detect and block phishing emails, malicious attachments, and links to malicious websites. APT actors often use spear-phishing attacks to gain initial access to an organization.</li>
+                                      <li>Use domain-based message authentication, reporting, and conformance (DMARC), DKIM, and SPF to protect against email spoofing and phishing.</li>
+                                      <li>Deploy web filtering tools to block access to malicious websites or known command-and-control (C2) servers used by APT actors to control compromised machines.</li>
+                                  </ul>
+                              </li>
+                              <li><h5>Data Encryption</h5>
+                                  <ul>
+                                      <li>Encrypt sensitive data at rest and in transit to protect it from theft or tampering during an APT attack. Even if attackers manage to gain access to your network, encryption can prevent them from stealing valuable data.</li>
+                                      <li>Ensure encryption keys are securely managed, and separate the keys from the data they protect.</li>
+                                  </ul>
+                              </li>
+                          </ol>
+                      </div>
+                  </div>
+              </div>  
+          </article>
+
+          <section class="subscription">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="text-center">Subscribe to the newsletter!</h3>
+                    <h4 class="text-center">Stay up to date with the weekly newsletter</h4>
+                    <form id="subscription-form" method="POST" action="https://formdump.codeinstitute.net">
+                      <div class="form-row align-items-center justify-content-center"> 
+                        <div class="col-auto">
+                          <label for="consultation_email">Email address</label>
+                          <input type="email" class="form-control" id="subscription_email" name="subscription_email" required>
+                          <small id="subscriptionHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>  
+              </div>  
+          </section>    
+      </main>
+
+      <footer>
+          <nav class="footer-navigation">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="security_tools.html">Security Tools</a>
+              </li>
+              <li>
+                <a href="articles.html">Articles</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="footer-container">
+            <ul id="social-networks">
+              <li>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                      aria-label="Visit our Facebook page (opens in a new tab)">
+                      <i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                      aria-label="Visit our Twitter page (opens in a new tab)">
+                      <i class="fa-brands fa-twitter-square"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                      aria-label="Visit our YouTube page (opens in a new tab)">
+                      <i class="fa-brands fa-youtube-square"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                      aria-label="Visit our Instagram page (opens in a new tab)">
+                      <i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+            <div class="footer-copyright">© 2024 «Cyber Security»</div>
+          </div>
+      </footer>
+
+      <!-- Modal -->
+      <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+                  <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+                
+                  <div class="form-group">
+                    <label for="consultation_name">Full name</label>
+                    <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="consultation_email">Email address</label>
+                    <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="consultation_question">Your question</label>
+                    <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>   
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+</html>

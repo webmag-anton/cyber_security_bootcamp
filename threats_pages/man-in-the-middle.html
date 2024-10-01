@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ransomware</title>
+    <title>Man-in-the-Middle (MitM) Attacks</title>
     <!-- favicons -->
  
     <meta name="description" content="Cyber Security">
@@ -41,7 +41,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Ransomware</li>
+                          <li class="breadcrumb-item active" aria-current="page">Man-in-the-Middle (MitM) Attacks</li>
                         </ol>
                       </nav>
                 </div>
@@ -49,78 +49,66 @@
         </div>
         <article id="threat_ransomware">
             <div class="container">
-                <h3 class="text-center">Ransomware</h3>
+                <h3 class="text-center">Man-in-the-Middle (MitM) Attacks</h3>
                 <div class="row">
                     <div class="col-12">
-                        <p><b>Description:</b> Malicious software that encrypts data and demands a ransom payment in exchange for the decryption key.</p>
-                        <p><b>Impact:</b> Disruption of operations, data loss, and financial losses.</p>
-                        <p><b>Examples:</b> WannaCry, Ryuk, REvil.</p>
-                        <p>Protecting against ransomware requires a comprehensive approach that includes both preventive and reactive strategies.</p>
-                        <p class="accent">Here are some best practices to safeguard against ransomware threats:</p>
+                        <p><b>Description:</b> An attacker intercepts communications between two parties to steal or alter information without their knowledge.</p>
+                        <p><b>Impact:</b> Theft of sensitive data, such as login credentials or financial information.</p>
+                        <p><b>Examples:</b> Session hijacking, Wi-Fi eavesdropping.</p>
+                        <p>A Man-in-the-Middle (MitM) attack occurs when an attacker intercepts communication between two parties, such as between a user and a website, without either party knowing. The attacker can steal sensitive information, such as login credentials or financial data, or alter the communication. Protecting against MitM attacks requires a combination of encryption, secure communication protocols, and strong security practices. </p>
+                        <p class="accent">Here are key strategies to protect against MitM attacks:</p>
                         <ol>
-                            <li><h5>Regular Backups</h5>
+                            <li><h5>Use Strong Encryption</h5>
                                 <ul>
-                                    <li>Keep frequent backups of all critical data, ensuring that backups are stored in locations that are not directly accessible from your main network (e.g., offline backups or cloud storage).</li>
-                                    <li>Test your backups regularly to ensure that they can be restored effectively in the event of a ransomware attack.</li>
+                                    <li>Encrypt all sensitive data transmitted between clients and servers using secure protocols like TLS (Transport Layer Security). Encryption ensures that even if an attacker intercepts the communication, they cannot read the data without the encryption keys.</li>
+                                    <li>Ensure all web services use HTTPS (which is built on TLS) rather than HTTP. HTTPS ensures that all data exchanged between the user’s browser and the web server is encrypted.</li>
+                                    <li>Always check for the padlock symbol and the "HTTPS" prefix in the URL when visiting websites, especially for banking, e-commerce, or other sensitive transactions.</li>
                                 </ul>
                             </li>
-                            <li><h5>Patch and Update Software</h5>
+                            <li><h5>Implement SSL/TLS Certificates</h5>
                                 <ul>
-                                    <li>Apply security patches and updates for operating systems, software, and firmware as soon as they are released. Ransomware often exploits known vulnerabilities in outdated software.</li>
-                                    <li>Enable automatic updates where possible to ensure that systems stay up to date.</li>
+                                    <li>Ensure your website or service uses valid SSL/TLS certificates issued by a trusted Certificate Authority (CA). These certificates authenticate the identity of the website, helping to prevent attackers from impersonating a legitimate site in a MitM attack.</li>
+                                    <li>Regularly check and update certificates, and consider using Extended Validation (EV) certificates for higher levels of trust.</li>
+                                    <li>Use HSTS (HTTP Strict Transport Security) to enforce HTTPS connections, preventing browsers from connecting over insecure HTTP, which can be vulnerable to MitM attacks.</li>
                                 </ul>
                             </li>
-                            <li><h5>Use Strong Endpoint Protection</h5>
+                            <li><h5>Enable Multi-Factor Authentication (MFA)</h5>
                                 <ul>
-                                    <li>Install reputable antivirus and antimalware software on all devices, and ensure that it is always up to date.</li>
-                                    <li>Enable real-time scanning and behavioral monitoring features to detect malicious activity before it causes harm.</li>
-                                    <li>Use firewalls to block unauthorized traffic and restrict access to network resources.</li>
+                                    <li>Multi-factor authentication (MFA) adds an extra layer of security, requiring users to provide additional verification (e.g., a one-time code from a mobile app) in addition to their password.</li>
+                                    <li>Even if an attacker steals a user’s credentials during a MitM attack, they cannot gain access without the additional authentication factor.</li>
                                 </ul>
                             </li>
-                            <li><h5>Email and Phishing Protection</h5>
+                            <li><h5>Avoid Public Wi-Fi for Sensitive Transactions</h5>
                                 <ul>
-                                    <li>Deploy robust email filtering solutions to prevent phishing emails and malicious attachments from reaching users.</li>
-                                    <li>Educate users about how to identify phishing emails and encourage them not to click on suspicious links or download unsolicited attachments.</li>
-                                    <li>Use email authentication protocols (e.g., DMARC, SPF, and DKIM) to prevent attackers from spoofing your organization’s email domain.</li>
+                                    <li>Public Wi-Fi networks, especially in places like cafes, airports, and hotels, are prime targets for MitM attacks. Avoid performing sensitive tasks (e.g., banking, entering login credentials) over public Wi-Fi unless using a secure VPN.</li>
+                                    <li>Always assume public Wi-Fi is insecure unless it’s properly encrypted and uses WPA3 (the most secure Wi-Fi encryption standard). Older encryption standards like WPA2 or WEP can be more vulnerable to MitM attacks.</li>
                                 </ul>
                             </li>
-                            <li><h5>Limit User Privileges</h5>
+                            <li><h5>Use Virtual Private Networks (VPNs)</h5>
                                 <ul>
-                                    <li>Use the principle of least privilege (PoLP), ensuring that users only have the access necessary to perform their roles. This reduces the risk of malware spreading across the network.</li>
-                                    <li>Set up user accounts with limited privileges and avoid giving administrative access unless absolutely necessary.</li>
-                                    <li>Ensure that employees only have access to the files and systems they need for their job roles.</li>
+                                    <li>Virtual Private Networks (VPNs) encrypt all of your internet traffic, creating a secure tunnel between your device and the VPN server. This protects your communication from being intercepted, even on unsecured networks.</li>
+                                    <li>Ensure you use a reputable VPN provider that employs strong encryption standards (e.g., AES-256), which can safeguard against MitM attacks on public or untrusted networks.</li>
                                 </ul>
                             </li>
-                            <li><h5>Network Segmentation</h5>
+                            <li><h5>Verify Public Keys and Certificates</h5>
                                 <ul>
-                                    <li>Segment your network into isolated zones to minimize the spread of ransomware if a system is compromised.</li>
-                                    <li>Set up user accounts with limited privileges and avoid giving administrative access unless absolutely necessary.</li>
-                                    <li>Use firewalls, VLANs, and access controls to limit how ransomware can move laterally within the network.</li>
+                                    <li>Use public key pinning or certificate pinning to associate a specific cryptographic key with a web service or application, ensuring that only that key is trusted. This prevents attackers from using fraudulent certificates in MitM attacks.</li>
+                                    <li>Regularly audit and verify the certificates in use by your organization and users, and monitor for any signs of fraudulent or compromised certificates.</li>
                                 </ul>
                             </li>
-                            <li><h5>Multi-Factor Authentication (MFA)</h5>
+                            <li><h5>Secure DNS with DNSSEC</h5>
                                 <ul>
-                                    <li>Implement multi-factor authentication (MFA) on all user accounts, especially those with privileged access.</li>
-                                    <li>MFA adds an additional layer of security, making it harder for attackers to gain access to accounts, even if they steal login credentials.</li>
+                                    <li>Use DNSSEC (Domain Name System Security Extensions) to authenticate DNS requests and prevent DNS spoofing, a form of MitM attack where an attacker redirects traffic from legitimate sites to malicious ones.</li>
+                                    <li>DNSSEC ensures that users are connected to the correct websites by verifying the integrity and authenticity of DNS responses.</li>
                                 </ul>
                             </li>
-                            <li><h5>Disable Macros in Office Files</h5>
+                            <li><h5>Implement Strong Wi-Fi Security Protocols</h5>
                                 <ul>
-                                    <li>Ransomware often uses malicious macros in Office files to execute. Disable macros in documents from untrusted sources.</li>
-                                    <li>Educate users on the risks of enabling macros in documents that come from external or unknown sources.</li>
+                                    <li>Ensure that your home or business Wi-Fi networks use strong encryption standards such as WPA3. Avoid using outdated and vulnerable protocols like WEP or WPA2-PSK.</li>
+                                    <li>Use complex, unique passwords for your Wi-Fi network to prevent unauthorized access, and disable features like WPS (Wi-Fi Protected Setup) that can be exploited by attackers.</li>
                                 </ul>
                             </li>
                         </ol>
-                    </div>
-                    <div class="col-12">
-                        <h4 class="threat_advices text-center">What to Do if You Are Infected:</h4>
-                        <ul>
-                            <li>Isolate the infected system: Immediately disconnect the infected device(s) from the network to prevent the spread of ransomware.</li>
-                            <li>Assess the damage: Determine which files and systems have been affected and whether backups are available.</li>
-                            <li>Restore from backups: If possible, restore your data and systems from clean, recent backups.</li>
-                            <li>Avoid paying the ransom: There’s no guarantee you will regain access to your data, and paying ransoms funds future attacks.</li>
-                            <li>Notify authorities: In many cases, ransomware attacks should be reported to local authorities and, depending on the data involved, regulators.</li>
-                        </ul>
                     </div>
                 </div>
             </div>  

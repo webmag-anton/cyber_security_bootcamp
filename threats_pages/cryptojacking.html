@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ransomware</title>
+    <title>Cryptojacking</title>
     <!-- favicons -->
  
     <meta name="description" content="Cyber Security">
@@ -41,7 +41,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Ransomware</li>
+                          <li class="breadcrumb-item active" aria-current="page">Cryptojacking</li>
                         </ol>
                       </nav>
                 </div>
@@ -49,78 +49,70 @@
         </div>
         <article id="threat_ransomware">
             <div class="container">
-                <h3 class="text-center">Ransomware</h3>
+                <h3 class="text-center">Cryptojacking</h3>
                 <div class="row">
                     <div class="col-12">
-                        <p><b>Description:</b> Malicious software that encrypts data and demands a ransom payment in exchange for the decryption key.</p>
-                        <p><b>Impact:</b> Disruption of operations, data loss, and financial losses.</p>
-                        <p><b>Examples:</b> WannaCry, Ryuk, REvil.</p>
-                        <p>Protecting against ransomware requires a comprehensive approach that includes both preventive and reactive strategies.</p>
-                        <p class="accent">Here are some best practices to safeguard against ransomware threats:</p>
+                        <p><b>Description:</b> The unauthorized use of someone's computing resources to mine cryptocurrency.</p>
+                        <p><b>Impact:</b> Slows down systems, increased power consumption, hardware damage.</p>
+                        <p><b>Examples:</b> Coinhive (now defunct), attacks leveraging unpatched vulnerabilities.</p>
+                        <p>Cryptojacking is a type of cyberattack where attackers secretly use a victim's computing resources to mine cryptocurrencies without their consent. This can lead to decreased performance, increased energy costs, and potential hardware damage. To protect against cryptojacking, organizations and individuals can implement a variety of security measures and best practices.</p>
+                        <p class="accent">Here are some effective strategies to safeguard against cryptojacking:</p>
                         <ol>
-                            <li><h5>Regular Backups</h5>
+                            <li><h5>Use Robust Security Software</h5>
                                 <ul>
-                                    <li>Keep frequent backups of all critical data, ensuring that backups are stored in locations that are not directly accessible from your main network (e.g., offline backups or cloud storage).</li>
-                                    <li>Test your backups regularly to ensure that they can be restored effectively in the event of a ransomware attack.</li>
+                                    <li>Install and maintain up-to-date antivirus and anti-malware software that can detect and block cryptojacking scripts and malware.</li>
+                                    <li>Regularly scan your systems for any suspicious activities or unauthorized software.</li>
                                 </ul>
                             </li>
-                            <li><h5>Patch and Update Software</h5>
+                            <li><h5>Keep Software and Operating Systems Updated</h5>
                                 <ul>
-                                    <li>Apply security patches and updates for operating systems, software, and firmware as soon as they are released. Ransomware often exploits known vulnerabilities in outdated software.</li>
-                                    <li>Enable automatic updates where possible to ensure that systems stay up to date.</li>
+                                    <li>Regularly update your operating systems, applications, and software to patch any vulnerabilities that attackers might exploit.</li>
+                                    <li>Enable automatic updates where possible to ensure that you receive the latest security patches promptly.</li>
                                 </ul>
                             </li>
-                            <li><h5>Use Strong Endpoint Protection</h5>
+                            <li><h5>Utilize Ad Blockers and Script Blockers</h5>
                                 <ul>
-                                    <li>Install reputable antivirus and antimalware software on all devices, and ensure that it is always up to date.</li>
-                                    <li>Enable real-time scanning and behavioral monitoring features to detect malicious activity before it causes harm.</li>
-                                    <li>Use firewalls to block unauthorized traffic and restrict access to network resources.</li>
+                                    <li>Use ad blockers or script blockers in web browsers to prevent the execution of cryptojacking scripts that may be embedded in malicious ads or websites.</li>
+                                    <li>Extensions like NoScript or uBlock Origin can help block unwanted scripts.</li>
                                 </ul>
                             </li>
-                            <li><h5>Email and Phishing Protection</h5>
+                            <li><h5>Implement Network Monitoring</h5>
                                 <ul>
-                                    <li>Deploy robust email filtering solutions to prevent phishing emails and malicious attachments from reaching users.</li>
-                                    <li>Educate users about how to identify phishing emails and encourage them not to click on suspicious links or download unsolicited attachments.</li>
-                                    <li>Use email authentication protocols (e.g., DMARC, SPF, and DKIM) to prevent attackers from spoofing your organization’s email domain.</li>
+                                    <li>Monitor network traffic for unusual activity that could indicate cryptojacking, such as excessive CPU usage or connections to known cryptocurrency mining pools.</li>
+                                    <li>Use intrusion detection and prevention systems (IDPS) to identify and respond to abnormal behavior.</li>
                                 </ul>
                             </li>
-                            <li><h5>Limit User Privileges</h5>
+                            <li><h5>Educate Employees and Users</h5>
                                 <ul>
-                                    <li>Use the principle of least privilege (PoLP), ensuring that users only have the access necessary to perform their roles. This reduces the risk of malware spreading across the network.</li>
-                                    <li>Set up user accounts with limited privileges and avoid giving administrative access unless absolutely necessary.</li>
-                                    <li>Ensure that employees only have access to the files and systems they need for their job roles.</li>
+                                    <li>Conduct training sessions to educate employees about the risks of cryptojacking and how to recognize phishing attempts and suspicious links.</li>
+                                    <li>Encourage users to avoid clicking on unknown links and downloading software from untrusted sources.</li>
                                 </ul>
                             </li>
-                            <li><h5>Network Segmentation</h5>
+                            <li><h5>Restrict Browser Permissions</h5>
                                 <ul>
-                                    <li>Segment your network into isolated zones to minimize the spread of ransomware if a system is compromised.</li>
-                                    <li>Set up user accounts with limited privileges and avoid giving administrative access unless absolutely necessary.</li>
-                                    <li>Use firewalls, VLANs, and access controls to limit how ransomware can move laterally within the network.</li>
+                                    <li>Limit the permissions of browsers to reduce the risk of executing malicious scripts. For example, disable JavaScript for untrusted websites.</li>
+                                    <li>Configure browsers to ask for permission before running scripts or plugins.</li>
                                 </ul>
                             </li>
-                            <li><h5>Multi-Factor Authentication (MFA)</h5>
+                            <li><h5>Use a Firewall</h5>
                                 <ul>
-                                    <li>Implement multi-factor authentication (MFA) on all user accounts, especially those with privileged access.</li>
-                                    <li>MFA adds an additional layer of security, making it harder for attackers to gain access to accounts, even if they steal login credentials.</li>
+                                    <li>Implement a firewall to monitor and control incoming and outgoing traffic. This can help block unauthorized access attempts and malicious activities associated with cryptojacking.</li>
+                                    <li>Configure firewall rules to restrict traffic to known cryptocurrency mining pools.</li>
                                 </ul>
                             </li>
-                            <li><h5>Disable Macros in Office Files</h5>
+                            <li><h5>Audit and Manage Resource Usage</h5>
                                 <ul>
-                                    <li>Ransomware often uses malicious macros in Office files to execute. Disable macros in documents from untrusted sources.</li>
-                                    <li>Educate users on the risks of enabling macros in documents that come from external or unknown sources.</li>
+                                    <li>Regularly audit CPU and resource usage on devices to identify any anomalies. Sudden spikes in CPU usage could indicate potential cryptojacking activity.</li>
+                                    <li>Use monitoring tools to set alerts for unusual resource consumption.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Disable Unused Services and Ports</h5>
+                                <ul>
+                                    <li>Disable any unnecessary services, applications, and ports on devices to reduce the attack surface for cryptojacking.</li>
+                                    <li>Regularly review and tighten network configurations to limit exposure to potential threats.</li>
                                 </ul>
                             </li>
                         </ol>
-                    </div>
-                    <div class="col-12">
-                        <h4 class="threat_advices text-center">What to Do if You Are Infected:</h4>
-                        <ul>
-                            <li>Isolate the infected system: Immediately disconnect the infected device(s) from the network to prevent the spread of ransomware.</li>
-                            <li>Assess the damage: Determine which files and systems have been affected and whether backups are available.</li>
-                            <li>Restore from backups: If possible, restore your data and systems from clean, recent backups.</li>
-                            <li>Avoid paying the ransom: There’s no guarantee you will regain access to your data, and paying ransoms funds future attacks.</li>
-                            <li>Notify authorities: In many cases, ransomware attacks should be reported to local authorities and, depending on the data involved, regulators.</li>
-                        </ul>
                     </div>
                 </div>
             </div>  
@@ -223,11 +215,11 @@
           </div>
         </div>
     </div>
-  </div>   
+  </div>  
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <!-- Font Awesome kit -->
-    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 </html>
