@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insider Threats</title>
+    <!-- favicons -->
+ 
+    <meta name="description" content="Cyber Security">
+    <meta name="keywords" content="cyber security">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">
+              <img id="logo" src="../assets/images/logo_cyber_security.png" alt="cyber security logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../security_tools.html">Security Tools</a>
+                <a class="nav-link" href="../articles.html">Articles<span class="sr-only">(current)</span></a>
+              </div>
+              <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
+            </div>
+          </nav>
+    </header> 
+
+    <main class="threat_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Insider Threats</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <article id="threat_ransomware">
+            <div class="container">
+                <h3 class="text-center">Insider Threats</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <p><b>Description:</b> Security threats that originate from within the organization, whether intentional (malicious insiders) or accidental (employee negligence).</p>
+                        <p><b>Impact:</b> Data leaks, financial damage, reputational harm.</p>
+                        <p><b>Examples:</b> An employee stealing proprietary data or accidentally exposing sensitive information.</p>
+                        <p>Insider threats, which involve malicious or unintentional actions by individuals within an organization, can be particularly challenging to defend against. These threats come from employees, contractors, or business partners who have legitimate access to internal systems and data. Protecting against insider threats requires a combination of technical controls, organizational policies, and employee awareness.</p>
+                        <p class="accent">Here are key strategies to help protect against insider threats:</p>
+                        <ol>
+                            <li><h5>Implement Strong Access Controls</h5>
+                                <ul>
+                                    <li>Limit user privileges to the minimum necessary for individuals to perform their jobs (Principle of Least Privilege). Avoid granting excessive permissions that could be exploited, either accidentally or intentionally.</li>
+                                    <li>Use Role-Based Access Control (RBAC) to assign access based on the role and responsibilities of each employee. Regularly review access permissions and revoke unnecessary access.</li>
+                                    <li>Implement separation of duties, where critical tasks are divided between multiple people to prevent any one individual from having too much control over sensitive processes or data.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Use Multi-Factor Authentication (MFA)</h5>
+                                <ul>
+                                    <li>Require multi-factor authentication (MFA) for accessing sensitive systems, especially for privileged accounts. Even if credentials are compromised by an insider, MFA adds an extra layer of protection.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Monitor and Audit User Activity</h5>
+                                <ul>
+                                    <li>Set up user activity monitoring tools to track access and actions performed by employees on sensitive systems. These tools should log who accessed what data and when.</li>
+                                    <li>Use SIEM (Security Information and Event Management) systems to analyze log data in real-time for suspicious activity. Anomalies such as large data transfers, accessing data outside of normal hours, or changes to system configurations should trigger alerts.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Data Loss Prevention (DLP)</h5>
+                                <ul>
+                                    <li>Deploy Data Loss Prevention (DLP) tools to monitor, detect, and prevent the unauthorized transfer or sharing of sensitive data. DLP can block or flag attempts to send sensitive data via email, USB drives, cloud storage, or other channels.</li>
+                                    <li>Set up rules that define which data is considered sensitive, ensuring the system can properly monitor and protect it.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Behavioral Analytics and Anomaly Detection</h5>
+                                <ul>
+                                    <li>Implement User and Entity Behavior Analytics (UEBA) systems to detect abnormal behavior patterns that could indicate insider threats. These systems analyze factors such as login times, file access behavior, and network traffic.</li>
+                                    <li>UEBA tools can detect subtle signs of malicious activity, such as an employee accessing data at unusual times, downloading excessive amounts of data, or logging in from unusual locations.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Regular Employee Training and Awareness Programs</h5>
+                                <ul>
+                                    <li>Conduct security awareness training for all employees to ensure they understand the potential risks of insider threats and know how to report suspicious behavior.</li>
+                                    <li>Teach employees about phishing, social engineering, and how their actions can inadvertently lead to security breaches. This helps reduce unintentional insider threats.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Implement an Insider Threat Detection Program</h5>
+                                <ul>
+                                    <li>Create a formal insider threat program with dedicated staff responsible for detecting and responding to insider threats. This team should have access to monitoring tools and perform regular analysis of activity within the organization.</li>
+                                    <li>Establish clear policies for reporting and responding to suspected insider threats, ensuring timely action when necessary.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Enforce Strict Data Access and Transfer Policies</h5>
+                                <ul>
+                                    <li>Limit the ability to copy, download, or transfer sensitive data to external devices or services. For example, restrict the use of USB drives, personal cloud storage accounts, and external email services for handling company data.</li>
+                                    <li>Require the use of secure file transfer methods for sharing sensitive data, and track data movement to identify and block unauthorized transfers.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>  
+        </article>
+
+        <section class="subscription">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h3 class="text-center">Subscribe to the newsletter!</h3>
+                  <h4 class="text-center">Stay up to date with the weekly newsletter</h4>
+                  <form id="subscription-form" method="POST" action="https://formdump.codeinstitute.net">
+                    <div class="form-row align-items-center justify-content-center"> 
+                      <div class="col-auto">
+                        <label for="consultation_email">Email address</label>
+                        <input type="email" class="form-control" id="subscription_email" name="subscription_email" required>
+                        <small id="subscriptionHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>  
+            </div>  
+        </section>    
+    </main>
+
+    <footer>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="security_tools.html">Security Tools</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="footer-container">
+          <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="footer-copyright">© 2024 «Cyber Security»</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+  
+                <div class="form-group">
+                  <label for="consultation_name">Full name</label>
+                  <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_email">Email address</label>
+                  <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_question">Your question</label>
+                  <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+</html>

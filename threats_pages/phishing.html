@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing</title>
+    <!-- favicons -->
+ 
+    <meta name="description" content="Cyber Security">
+    <meta name="keywords" content="cyber security">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">
+              <img id="logo" src="../assets/images/logo_cyber_security.png" alt="cyber security logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../security_tools.html">Security Tools</a>
+                <a class="nav-link" href="../articles.html">Articles<span class="sr-only">(current)</span></a>
+              </div>
+              <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
+            </div>
+          </nav>
+    </header> 
+
+    <main class="threat_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Phishing</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <article id="threat_ransomware">
+            <div class="container">
+                <h3 class="text-center">Phishing</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <p><b>Description:</b> Fraudulent attempts to obtain sensitive information (like login credentials) by posing as a trustworthy entity, typically through email or messaging.</p>
+                        <p><b>Impact:</b> Data theft, unauthorized access, financial fraud.</p>
+                        <p><b>Examples:</b> Spear-phishing (targeted attacks), Business Email Compromise (BEC).</p>
+                        <p>Phishing attacks are among the most common cyber threats, targeting individuals and organizations through deceptive emails, messages, or websites designed to steal sensitive information.</p>
+                        <p class="accent">Here are some best practices for protecting against phishing threats:</p>
+                        <ol>
+                            <li><h5>Employee Education and Awareness</h5>
+                                <ul>
+                                    <li>Regular training on how to identify phishing attempts is crucial. Ensure employees know how to spot suspicious emails, links, and attachments.</li>
+                                    <li>Conduct phishing simulations to test employees' ability to recognize phishing attempts.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Email Filtering and Spam Protection</h5>
+                                <ul>
+                                    <li>Use advanced email filtering solutions to block phishing emails before they reach users’ inboxes.</li>
+                                    <li>Implement anti-phishing tools that analyze incoming emails for suspicious content, such as phishing links or spoofed sender addresses.</li>
+                                    <li>Mark external emails with a warning banner, so users know if an email originates outside the organization.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Multi-Factor Authentication (MFA)</h5>
+                                <ul>
+                                    <li>Implement multi-factor authentication (MFA) across all accounts, especially for sensitive or privileged accounts.</li>
+                                    <li>Even if a phishing attack is successful and credentials are compromised, MFA provides an extra layer of security, making it harder for attackers to gain access.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Use Strong, Unique Passwords</h5>
+                                <ul>
+                                    <li>Ensure all users create strong, unique passwords for each account. Avoid reusing passwords across different services, which can prevent attackers from accessing multiple accounts with stolen credentials.</li>
+                                    <li>Encourage the use of password managers to store and generate strong passwords.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Enable Web Filtering</h5>
+                                <ul>
+                                    <li>Implement web filtering to block access to known malicious websites or phishing sites.</li>
+                                    <li>Use tools like Domain-based Message Authentication, Reporting & Conformance (DMARC), Sender Policy Framework (SPF), and DomainKeys Identified Mail (DKIM) to verify email sender domains and prevent email spoofing.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Verify Emails and Links Before Clicking</h5>
+                                <ul>
+                                    <li>Always check the sender's email address carefully, as phishing emails often use addresses that look similar to legitimate ones (e.g., "support@paypaI.com" instead of "support@paypal.com").</li>
+                                    <li>Hover over links in emails to verify the URL before clicking. Avoid clicking on links that don’t match the organization’s domain.</li>
+                                    <li>Encourage the use of official websites by typing URLs directly into the browser, rather than clicking on links from emails.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Avoid Downloading Attachments from Untrusted Sources</h5>
+                                <ul>
+                                    <li>Do not open attachments from unknown or suspicious emails. Phishing emails often contain malicious attachments like PDFs, Word documents, or Excel files that can infect your system with malware or ransomware.</li>
+                                    <li>Consider disabling macros in Microsoft Office files, which are often used by attackers to execute malicious code.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Implement Email Authentication Standards (DMARC, SPF, DKIM)</h5>
+                                <ul>
+                                    <li>Deploy DMARC, SPF, and DKIM standards for email authentication to prevent attackers from spoofing your organization's domain.</li>
+                                    <li>These tools help verify that emails claiming to be from your domain are legitimate, reducing the risk of phishing attacks that use forged sender addresses.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="threat_advices text-center">If You Suspect a Phishing Attack:</h4>
+                        <ul>
+                            <li>Do not click links or download attachments: If the email looks suspicious, avoid interacting with any content.</li>
+                            <li>Verify the request: If it appears to come from a trusted source (e.g., a bank or company), contact them directly through official channels to confirm.</li>
+                            <li>Report the phishing email: Alert your IT or security team and submit the email for review.</li>
+                            <li>Change passwords immediately: If you’ve inadvertently provided credentials, change your passwords as soon as possible and enable multi-factor authentication.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </article>
+
+        <section class="subscription">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h3 class="text-center">Subscribe to the newsletter!</h3>
+                  <h4 class="text-center">Stay up to date with the weekly newsletter</h4>
+                  <form id="subscription-form" method="POST" action="https://formdump.codeinstitute.net">
+                    <div class="form-row align-items-center justify-content-center"> 
+                      <div class="col-auto">
+                        <label for="consultation_email">Email address</label>
+                        <input type="email" class="form-control" id="subscription_email" name="subscription_email" required>
+                        <small id="subscriptionHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>  
+            </div>  
+        </section>    
+    </main>
+
+    <footer>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="security_tools.html">Security Tools</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="footer-container">
+          <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="footer-copyright">© 2024 «Cyber Security»</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+  
+                <div class="form-group">
+                  <label for="consultation_name">Full name</label>
+                  <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_email">Email address</label>
+                  <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_question">Your question</label>
+                  <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+</html>

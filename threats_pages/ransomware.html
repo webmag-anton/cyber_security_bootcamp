@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware</title>
+    <!-- favicons -->
+ 
+    <meta name="description" content="Cyber Security">
+    <meta name="keywords" content="cyber security">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">
+              <img id="logo" src="../assets/images/logo_cyber_security.png" alt="cyber security logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../security_tools.html">Security Tools</a>
+                <a class="nav-link" href="../articles.html">Articles<span class="sr-only">(current)</span></a>
+              </div>
+              <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
+            </div>
+          </nav>
+    </header> 
+
+    <main class="threat_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Ransomware</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <article id="threat_ransomware">
+            <div class="container">
+                <h3 class="text-center">Ransomware</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <p><b>Description:</b> Malicious software that encrypts data and demands a ransom payment in exchange for the decryption key.</p>
+                        <p><b>Impact:</b> Disruption of operations, data loss, and financial losses.</p>
+                        <p><b>Examples:</b> WannaCry, Ryuk, REvil.</p>
+                        <p>Protecting against ransomware requires a comprehensive approach that includes both preventive and reactive strategies.</p>
+                        <p class="accent">Here are some best practices to safeguard against ransomware threats:</p>
+                        <ol>
+                            <li><h5>Regular Backups</h5>
+                                <ul>
+                                    <li>Keep frequent backups of all critical data, ensuring that backups are stored in locations that are not directly accessible from your main network (e.g., offline backups or cloud storage).</li>
+                                    <li>Test your backups regularly to ensure that they can be restored effectively in the event of a ransomware attack.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Patch and Update Software</h5>
+                                <ul>
+                                    <li>Apply security patches and updates for operating systems, software, and firmware as soon as they are released. Ransomware often exploits known vulnerabilities in outdated software.</li>
+                                    <li>Enable automatic updates where possible to ensure that systems stay up to date.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Use Strong Endpoint Protection</h5>
+                                <ul>
+                                    <li>Install reputable antivirus and antimalware software on all devices, and ensure that it is always up to date.</li>
+                                    <li>Enable real-time scanning and behavioral monitoring features to detect malicious activity before it causes harm.</li>
+                                    <li>Use firewalls to block unauthorized traffic and restrict access to network resources.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Email and Phishing Protection</h5>
+                                <ul>
+                                    <li>Deploy robust email filtering solutions to prevent phishing emails and malicious attachments from reaching users.</li>
+                                    <li>Educate users about how to identify phishing emails and encourage them not to click on suspicious links or download unsolicited attachments.</li>
+                                    <li>Use email authentication protocols (e.g., DMARC, SPF, and DKIM) to prevent attackers from spoofing your organization’s email domain.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Limit User Privileges</h5>
+                                <ul>
+                                    <li>Use the principle of least privilege (PoLP), ensuring that users only have the access necessary to perform their roles. This reduces the risk of malware spreading across the network.</li>
+                                    <li>Set up user accounts with limited privileges and avoid giving administrative access unless absolutely necessary.</li>
+                                    <li>Ensure that employees only have access to the files and systems they need for their job roles.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Network Segmentation</h5>
+                                <ul>
+                                    <li>Segment your network into isolated zones to minimize the spread of ransomware if a system is compromised.</li>
+                                    <li>Set up user accounts with limited privileges and avoid giving administrative access unless absolutely necessary.</li>
+                                    <li>Use firewalls, VLANs, and access controls to limit how ransomware can move laterally within the network.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Multi-Factor Authentication (MFA)</h5>
+                                <ul>
+                                    <li>Implement multi-factor authentication (MFA) on all user accounts, especially those with privileged access.</li>
+                                    <li>MFA adds an additional layer of security, making it harder for attackers to gain access to accounts, even if they steal login credentials.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Disable Macros in Office Files</h5>
+                                <ul>
+                                    <li>Ransomware often uses malicious macros in Office files to execute. Disable macros in documents from untrusted sources.</li>
+                                    <li>Educate users on the risks of enabling macros in documents that come from external or unknown sources.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="threat_advices text-center">What to Do if You Are Infected:</h4>
+                        <ul>
+                            <li>Isolate the infected system: Immediately disconnect the infected device(s) from the network to prevent the spread of ransomware.</li>
+                            <li>Assess the damage: Determine which files and systems have been affected and whether backups are available.</li>
+                            <li>Restore from backups: If possible, restore your data and systems from clean, recent backups.</li>
+                            <li>Avoid paying the ransom: There’s no guarantee you will regain access to your data, and paying ransoms funds future attacks.</li>
+                            <li>Notify authorities: In many cases, ransomware attacks should be reported to local authorities and, depending on the data involved, regulators.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </article>
+
+        <section class="subscription">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h3 class="text-center">Subscribe to the newsletter!</h3>
+                  <h4 class="text-center">Stay up to date with the weekly newsletter</h4>
+                  <form id="subscription-form" method="POST" action="https://formdump.codeinstitute.net">
+                    <div class="form-row align-items-center justify-content-center"> 
+                      <div class="col-auto">
+                        <label for="consultation_email">Email address</label>
+                        <input type="email" class="form-control" id="subscription_email" name="subscription_email" required>
+                        <small id="subscriptionHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>  
+            </div>  
+        </section>    
+    </main>
+
+    <footer>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="security_tools.html">Security Tools</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="footer-container">
+          <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="footer-copyright">© 2024 «Cyber Security»</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+  
+                <div class="form-group">
+                  <label for="consultation_name">Full name</label>
+                  <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_email">Email address</label>
+                  <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_question">Your question</label>
+                  <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+</html>

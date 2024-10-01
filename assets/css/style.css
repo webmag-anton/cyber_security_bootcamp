@@ -106,6 +106,47 @@ main {
 
 
 
+/* Threat PAGE */
+.threat_main {
+    margin-top: 76px;
+    padding-top: 30px;
+    font-size: 16px;
+}
+.threat_main h3 {
+    margin-bottom: 30px;
+}
+.threat_main article {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.threat_main ol {
+    padding-left: 18px;
+    list-style-type: none;
+}
+.threat_main ul {
+    list-style-type: circle;
+}
+.threat_main li {
+    margin-bottom: 5px;
+}
+.threat_main h5 {
+    margin-top: 20px;
+}
+.threat_advices {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.threat_advices ~ ul {
+    padding-left: 18px;
+}
+.threat_main .accent {
+    color: var(--text-color-main-hover);
+    font-weight: bold;
+}
+/* Threat PAGE END */
+
+
+
 
 /* ARTICLES PAGE */
 #articles {
@@ -134,6 +175,37 @@ main {
 
 .articles__title {
     color: var(--text-color-main-hover);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8b42bd;
+    border-color: #8b42bd;
+}
+
+.subscription {
+    margin-top: 20px;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110,9,121,0.7848389355742297) 48%, rgba(0,212,255,1) 100%);
+}
+
+.subscription .text-muted {
+    color: white !important;
+}
+.subscription h3 {
+    margin-bottom: 10px;
+}
+.subscription h4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.subscription .btn {
+    background-color: #1f1240;
+    border-color: #fff;
+    margin-top: 15px;
+}
+.subscription .btn:hover {
+    background-color: #351e6e;
 }
 /* ARTICLES PAGE END */
 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS</title>
+    <!-- favicons -->
+ 
+    <meta name="description" content="Cyber Security">
+    <meta name="keywords" content="cyber security">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">
+              <img id="logo" src="../assets/images/logo_cyber_security.png" alt="cyber security logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../security_tools.html">Security Tools</a>
+                <a class="nav-link" href="../articles.html">Articles<span class="sr-only">(current)</span></a>
+              </div>
+              <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
+            </div>
+          </nav>
+    </header> 
+
+    <main class="threat_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../index.html#threats-types">Top cyber threats</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Distributed Denial of Service (DDoS) Attacks</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <article id="threat_ransomware">
+            <div class="container">
+                <h3 class="text-center">Distributed Denial of Service (DDoS) Attacks</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <p><b>Description:</b> An attack that overwhelms a server, service, or network with a flood of internet traffic, rendering it unusable.</p>
+                        <p><b>Impact:</b> Downtime, loss of revenue, damage to reputation.</p>
+                        <p><b>Examples:</b> Mirai botnet, SYN flood attacks.</p>
+                        <p>Protecting against Distributed Denial of Service (DDoS) attacks requires a combination of preventive measures, monitoring, and responsive strategies.</p>
+                        <p class="accent">Here’s how you can protect yourself or your organization from DDoS threats:</p>
+                        <ol>
+                            <li><h5>Implement Network Redundancy and Load Balancing</h5>
+                                <ul>
+                                    <li>Distribute your servers across multiple data centers or regions to ensure that if one server or network is targeted by a DDoS attack, others can take over and keep services running.</li>
+                                    <li>Use load balancing to distribute traffic across multiple servers, which helps reduce the impact of large volumes of incoming requests.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Use a Content Delivery Network (CDN)</h5>
+                                <ul>
+                                    <li>CDNs cache content across various geographic locations, reducing the direct load on your servers and mitigating the impact of DDoS attacks. Since CDNs can offload a significant portion of incoming traffic, they help absorb and manage high levels of traffic from an attack.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Deploy a Web Application Firewall (WAF)</h5>
+                                <ul>
+                                    <li>Web Application Firewalls filter incoming traffic and block malicious requests before they reach your servers. WAFs are especially effective against application-layer DDoS attacks (e.g., HTTP floods) that target websites and applications.</li>
+                                    <li>WAFs can distinguish between legitimate users and malicious bots, blocking harmful traffic while allowing genuine users to access services.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Use DDoS Protection Services</h5>
+                                <ul>
+                                    <li>Many providers offer DDoS mitigation services, which specialize in detecting and mitigating large-scale DDoS attacks.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Rate Limiting and Traffic Filtering</h5>
+                                <ul>
+                                    <li>Implement rate limiting to restrict the number of requests a single IP address can make to your server in a given period. This prevents attackers from overloading your servers with rapid-fire requests.</li>
+                                    <li>Use IP blacklisting to block known malicious IP addresses or geographical regions from which you don’t expect legitimate traffic.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Monitor and Analyze Traffic</h5>
+                                <ul>
+                                    <li>Set up network monitoring tools (such as Nagios, Zabbix, or SolarWinds) to monitor traffic patterns in real-time and detect anomalies that may indicate a DDoS attack.</li>
+                                    <li>Utilize intrusion detection systems (IDS) and intrusion prevention systems (IPS) to automatically detect and block malicious traffic before it reaches critical parts of your network.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Create an Incident Response Plan</h5>
+                                <ul>
+                                    <li>Develop a DDoS response plan that outlines the steps to take if an attack occurs, including roles, responsibilities, communication protocols, and escalation procedures.</li>
+                                    <li>Regularly update and test the plan through simulation exercises to ensure your team is prepared to respond effectively.</li>
+                                </ul>
+                            </li>
+                            <li><h5>Ensure Network Infrastructure Scalability</h5>
+                                <ul>
+                                    <li>Design your infrastructure with scalability in mind, ensuring you can quickly add resources like bandwidth, servers, or cloud services during a DDoS attack.</li>
+                                    <li>Use auto-scaling features offered by cloud providers like Amazon AWS or Microsoft Azure, which can automatically increase server capacity when demand spikes.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="threat_advices text-center">What to Do During a DDoS Attack:</h4>
+                        <ul>
+                            <li>Activate DDoS Protection Plans: Engage your DDoS mitigation service or enable your cloud provider’s built-in DDoS protection mechanisms.</li>
+                            <li>Communicate: Inform your customers and stakeholders that you are experiencing an attack, and provide regular updates on the status of the service.</li>
+                            <li>Analyze Attack Vectors: Work with your IT and security teams to identify the type of attack (e.g., volumetric, application-layer, or protocol-based) and adapt your defenses accordingly.</li>
+                            <li>Contact Your ISP: If the attack overwhelms your defenses, work with your ISP to filter traffic at their level or reroute it to a scrubbing center.</li>
+                            <li>Isolate Critical Services: If necessary, temporarily take non-essential services offline to focus on protecting critical systems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </article>
+
+        <section class="subscription">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h3 class="text-center">Subscribe to the newsletter!</h3>
+                  <h4 class="text-center">Stay up to date with the weekly newsletter</h4>
+                  <form id="subscription-form" method="POST" action="https://formdump.codeinstitute.net">
+                    <div class="form-row align-items-center justify-content-center"> 
+                      <div class="col-auto">
+                        <label for="consultation_email">Email address</label>
+                        <input type="email" class="form-control" id="subscription_email" name="subscription_email" required>
+                        <small id="subscriptionHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>  
+            </div>  
+        </section>    
+    </main>
+
+    <footer>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="security_tools.html">Security Tools</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="footer-container">
+          <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="footer-copyright">© 2024 «Cyber Security»</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+  
+                <div class="form-group">
+                  <label for="consultation_name">Full name</label>
+                  <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_email">Email address</label>
+                  <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_question">Your question</label>
+                  <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+</html>
