@@ -53,6 +53,9 @@ Cyber Security is a project that strives to help people prevent cyber threats an
 
   - This page will allow the user to read information about the company to have trust in the company and its services.
 
+## Project Board link 
+
+[link](https://github.com/users/webmag-anton/projects/2)
 
 ## Testing 
 
