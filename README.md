@@ -2,7 +2,7 @@
 
 Cyber Security is a project that strives to help people prevent cyber threats and provide detailed information about them. Also, we provide useful advices and tools related to cyber security and consult users if needed.
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsice Mockup](https://github.com/webmag-anton/cyber_security_bootcamp/blob/main/assets/images/responsive-mockup.jpg)
 
 ## Features 
 
