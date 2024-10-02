@@ -127,6 +127,10 @@ section h3 {
     border-color: #561cdd;
 }
 
+.consultation-form__title {
+    margin-bottom: 25px;
+}
+
 .navbar-dark .navbar-nav .nav-link.active {
     color: #e4cfff;
 }
@@ -316,6 +320,10 @@ main {
     color: white;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110,9,121,0.7848389355742297) 48%, rgba(0,212,255,1) 100%);
+}
+
+#about_main .subscription h4 {
+    margin-top: 0;
 }
 
 .subscription .text-muted {
