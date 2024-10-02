@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+      /* Light mode */
+    --light-text: #000;
+    --light-text-hover: #4a21a7;
+    --light-text-reverse: #fff;
+    --light-bg-color-accent: #cfc7b0;
+    --light-bg-color: #fff;
+    
+    /* Dark mode */
+    --dark-text: #fff;
+    --dark-text-hover: #4a21a7;
+    --light-text-reverse: #000;
+    --dark-bg-color-accent: #cfc7b0;
+    --dark-bg-color: #272727;
+    
+    /* Default mode */
+    --text-color-main: var(--light-text);
+    --text-color-main-hover: var(--light-text-hover);
+    --text-color-reverse: var(--light-text-reverse);
+    --bg-color-accent: var(--light-bg-color-accent);
+    --bg-color: var(--light-bg-color);
+    
     /* Light mode */
-  --light-text: #000;
-  --light-text-hover: #4a21a7;
-  --light-text-reverse: #fff;
-  --light-bg-color-accent: #cfc7b0;
-  --light-bg-color: #fff;
-
-  /* Dark mode */
-  --dark-text: #fff;
-  --dark-text-hover: #4a21a7;
-  --light-text-reverse: #000;
-  --dark-bg-color-accent: #cfc7b0;
-  --dark-bg-color: #272727;
-
-  /* Default mode */
-  --text-color-main: var(--light-text);
-  --text-color-main-hover: var(--light-text-hover);
-  --text-color-reverse: var(--light-text-reverse);
-  --bg-color-accent: var(--light-bg-color-accent);
-  --bg-color: var(--light-bg-color);
-
-  /* Light mode */
-  --light-switch-shadow: #373d4e;
-  --light-switch-icon: "🌚";
-
-  /* Dark mode */
-  --dark-switch-shadow: #fce477;
-  --dark-switch-icon: "🌝";
-
-  /* Default mode */
-  --switch-shadow-color: var(--light-switch-shadow);
-  --switch-icon: var(--light-switch-icon);
+    --light-switch-shadow: #373d4e;
+    --light-switch-icon: "🌚";
+    
+    /* Dark mode */
+    --dark-switch-shadow: #fce477;
+    --dark-switch-icon: "🌝";
+    
+    /* Default mode */
+    --switch-shadow-color: var(--light-switch-shadow);
+    --switch-icon: var(--light-switch-icon);
 }
 
 /* Switched mode */
@@ -109,7 +109,8 @@ section h3 {
 }
 
 #logo {
-    height: 50px;
+    height: 38px;
+    margin-top: -8px;
 }
 
 #get-consultation-btn {
@@ -340,12 +341,45 @@ main {
     background-color: #351e6e;
 }
 
+/* TOOLS */
+#tools_main {
+    margin-top: 76px;
+}
+
+.security-tools a {
+    color: #d5beff;
+}
+
+.security-tools caption {
+    color: var(--text-color-main);
+}
+
+/* ABOUT */
+#about_main {
+    margin-top: 76px;
+    font-size: 16px;
+}
+
+#about_main h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+#about_main ul {
+    margin-bottom: 30px;
+}
+
+#about_main li {
+    margin-bottom: 10px;
+}
+
 /* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 140px;
     padding: 0 16px;
     background-color: var(--bg-color-accent);
 } 
@@ -429,6 +463,11 @@ footer {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    #logo {
+        height: 50px;
+        margin-top: 0;
+    }
+
     #get-consultation-btn {
         margin: 0 0 0 20px;
     }

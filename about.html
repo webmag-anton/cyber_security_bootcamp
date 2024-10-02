@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="description" content="Cyber Security">
+    <meta name="keywords" content="cyber security">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-switch">
+  <div class="page">
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html">
+              <img id="logo" src="./assets/images/logo_cyber_security.webp" alt="cyber security logo">
+            </a>
+            <label for="theme-switch" id="switch-label"></label>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="security_tools.html">Security Tools</a>
+                <a class="nav-link" href="articles.html">Articles</a>
+                <a class="nav-link active" href="about.html">About us<span class="sr-only">(current)</span></a>
+              </div>
+              <button id="get-consultation-btn" type="button" class="btn btn-success" data-toggle="modal" data-target="#consultationModal">Get Consultation</button>
+            </div>
+          </nav>
+    </header> 
+
+    <main id="about_main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-center">About us</h3>
+                        <p>At <b>Cyber Security</b>, we are dedicated to safeguarding the digital world. With a deep understanding of the ever-evolving threat landscape, we provide cutting-edge cybersecurity solutions designed to protect businesses, individuals, and data from cyberattacks.</p>
+                        <p>Founded on the belief that security is not just a necessity, but a responsibility, our mission is to empower organizations with the tools and knowledge to defend against cyber threats. From advanced threat detection and risk management to vulnerability assessments and proactive defense strategies, our expertise spans the full spectrum of cybersecurity.</p>
+                        <p>Our team consists of highly skilled professionals with years of experience in network security, ethical hacking, and risk mitigation. We work with businesses of all sizes across various industries, providing tailored solutions that meet their unique needs. By staying ahead of the latest trends and threats, we ensure that our clients are always prepared to respond to and prevent cyber incidents.</p>
+                        <p>At Cyber Security, we believe in building trust through transparency, reliability, and innovation. We partner with leading security technology providers and use state-of-the-art tools to create robust defense systems for our clients. Whether it's securing critical infrastructure, protecting sensitive data, or training teams on best security practices, we are here to help you navigate the complex world of cybersecurity.</p>
+                        <p>Together, we can create a safer, more secure digital future. [Your Company Name] is here to ensure that your business thrives securely in an increasingly connected world.</p>
+                        <h4>Our Values:</h4>
+                        <ul>
+                            <li>
+                                <b>Innovation:</b> We leverage the latest technologies to stay ahead of emerging threats.
+                            </li>
+                            <li>
+                                <b>Trust:</b> We build strong, lasting relationships with our clients based on integrity and transparency.
+                            </li>
+                            <li>
+                                <b>Commitment:</b> Your security is our priority, and we are dedicated to providing top-tier protection and support.
+                            </li>
+                        </ul>
+                        <p>Let us protect what matters most — your data, your business, and your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="security_tools.html">Security Tools</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="footer-container">
+          <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="footer-copyright">© 2024 «Cyber Security»</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="consultation-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h4 class="consultation-form__title">Fill out the form with your question about cyber security and we will touch with you!</h4>
+  
+                <div class="form-group">
+                  <label for="consultation_name">Full name</label>
+                  <input type="text" class="form-control" id="consultation_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_email">Email address</label>
+                  <input type="email" class="form-control" id="consultation_email" aria-describedby="emailHelp" name="email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="consultation_question">Your question</label>
+                  <textarea class="form-control" id="consultation_question" rows="5" name="question" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div> 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+</html>
