@@ -7,29 +7,29 @@
     --light-text-reverse: #fff;
     --light-bg-color-accent: #cfc7b0;
     --light-bg-color: #fff;
-    
+
     /* Dark mode */
     --dark-text: #fff;
     --dark-text-hover: #4a21a7;
     --light-text-reverse: #000;
     --dark-bg-color-accent: #cfc7b0;
     --dark-bg-color: #272727;
-    
+
     /* Default mode */
     --text-color-main: var(--light-text);
     --text-color-main-hover: var(--light-text-hover);
     --text-color-reverse: var(--light-text-reverse);
     --bg-color-accent: var(--light-bg-color-accent);
     --bg-color: var(--light-bg-color);
-    
+
     /* Light mode */
     --light-switch-shadow: #373d4e;
     --light-switch-icon: "🌚";
-    
+
     /* Dark mode */
     --dark-switch-shadow: #fce477;
     --dark-switch-icon: "🌝";
-    
+
     /* Default mode */
     --switch-shadow-color: var(--light-switch-shadow);
     --switch-icon: var(--light-switch-icon);
@@ -346,8 +346,18 @@ main {
     margin-top: 76px;
 }
 
+.security-tools tbody tr td:first-child {
+    color: #eadfff;
+}
+
+.security-tools tbody tr td:nth-child(2) {
+    font-style: italic;
+}
+
+
 .security-tools a {
-    color: #d5beff;
+    color: #f3ecff;
+    text-decoration: underline;
 }
 
 .security-tools caption {
